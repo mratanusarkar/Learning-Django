@@ -1,3 +1,4 @@
+# pylint: disable=C0103
 """A simple and basic use of requests module with http://www.google.com"""
 
 import requests
