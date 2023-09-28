@@ -1,0 +1,11 @@
+# Environments
+.env
+.venv
+.webapi-venv
+env/
+venv/
+webapi-venv/
+ENV/
+env.bak/
+venv.bak/
+webapi-venv.bak/

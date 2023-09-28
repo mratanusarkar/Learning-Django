@@ -1,0 +1,14 @@
+astroid==2.15.8
+certifi==2023.7.22
+charset-normalizer==3.2.0
+dill==0.3.7
+idna==3.4
+isort==5.12.0
+lazy-object-proxy==1.9.0
+mccabe==0.7.0
+platformdirs==3.10.0
+pylint==2.17.6
+requests==2.31.0
+tomlkit==0.12.1
+urllib3==2.0.5
+wrapt==1.15.0
