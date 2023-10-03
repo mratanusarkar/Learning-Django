@@ -15,8 +15,8 @@ class Brand(models.Model):
 
 class Gadget(models.Model):
     """Defines the Product or the Gadget and it's details"""
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE, related_name="gadgets")
     name = models.CharField(max_length=120)
+    brand = models.ForeignKey(Brand, on_delete=models.CASCADE, related_name="gadgets")
     description = models.TextField(max_length=800, blank=True, null=True)
     photo = models.ImageField(blank=True, null=True)
     price = models.FloatField()
