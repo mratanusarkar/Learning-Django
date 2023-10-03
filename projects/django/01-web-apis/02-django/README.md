@@ -25,3 +25,12 @@
 2. ensure in launch.json, configurations, the value for program is:
    `"program": "${workspaceFolder}/projects/django/01-web-apis/02-django/techmart/manage.py"`
 3. In debug tab, select "Python: Django" and press run.
+
+# Notes
+- one of the easiest ways to create a view in django is using the **generic class based views** that are already provided by the framework.
+
+  here's how you import the same:
+  ```python
+  from django.views.generic.detail import DetailView
+  from django.views.generic.list import ListView
+  ```
