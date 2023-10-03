@@ -4,6 +4,7 @@ certifi==2023.7.22
 charset-normalizer==3.2.0
 dill==0.3.7
 Django==4.2.5
+django-cors-headers==4.2.0
 idna==3.4
 isort==5.12.0
 lazy-object-proxy==1.9.0
