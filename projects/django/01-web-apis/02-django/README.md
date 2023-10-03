@@ -27,10 +27,24 @@
 3. In debug tab, select "Python: Django" and press run.
 
 # Notes
-- one of the easiest ways to create a view in django is using the **generic class based views** that are already provided by the framework.
 
-  here's how you import the same:
+One of the easiest ways to create a view in django is using the **generic class based views** that are already provided by the framework.
+
+Here's how to achieve the same:
+
+1. create model as usual
+2. while implementing the view, use generic views from django:
   ```python
   from django.views.generic.detail import DetailView
   from django.views.generic.list import ListView
   ```
+3. we need to create templates to use our views.
+  - create a template folder inside app
+4. extend and inherit the `django.views.generic` view classes using
+  - your own custom classes and 
+  - linking the html templates with the models
+5. implement a url-pattern in the app, and link it to the main project `url.py`
+6. (optional) in `settings.py` add the constant values for path to media
+6. (optional) in `url.py` for debug mode expose and link the static files and media paths
+7. register the models to django admin
+8. run server
