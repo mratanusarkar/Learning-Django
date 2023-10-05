@@ -48,3 +48,12 @@ Here's how to achieve the same:
 6. (optional) in `url.py` for debug mode expose and link the static files and media paths
 7. register the models to django admin
 8. run server
+
+
+There is another approach to extend these functionalities using `django.http.` to create API endpoints and expose them!
+
+Here's how to achieve the same:
+
+1. most of the steps are same as above
+2. in views, implement `JsonResponse` in a function
+3. use the same in `urls.py`
